@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(0.25turn, #190361, #bb00ff);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* first screen */
+
+.firstScreen{
+    margin-top: -10rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    background-color: white;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+
+    height: 42.4rem;
+    width: 42.8rem;
+}
+
+h1{
+    text-align: center;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    color: #34355B;
+
+    height: 5.8rem;
+    width: 25.8rem;
+
+    margin-bottom: 1.4rem;
+}
+
+p {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    color: #34355B;
+
+    margin-bottom: 2rem;
+}
+
+#firstImage, #secondImage {
+    height: 20rem;
+    width: 30rem;
+}
+
+#firstImage {
+    background-image: url('./images/fortune-cookie.jpg');
+}
+
+#firstImage:hover {
+    cursor: pointer;
+    animation: treme .2s ease infinite;
+}
+
+/* Second Screen */
+.secondScreen {
+    margin-top: -10rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 4.8rem 6.4rem;
+
+    background-color: white;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+
+    height: 56.4rem;
+    width: 42.8rem;
+}
+
+h2 {
+    text-align: center;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    color: #34355B;
+
+    height: 5.8rem;
+    width: 29.7rem;
+
+    margin-bottom: 1.4rem;
+}
+
+#lucky {
+    font-family: 'Dancing Script';
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+    
+    color: #000000;
+    padding: 1rem;
+
+    width: 29.3rem;
+
+    background: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+
+    animation: upPhrase 900ms ease;
+}
+
+#secondImage {
+    background-image: url('./images/opened-cookie.jpg');
+    margin-bottom: 1.7rem;
+}
+
+button {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 10px;
+
+    width: 174px;
+    height: 52px;
+
+    background: #FF9500;
+    border-radius: 4px;
+
+    border: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes treme {
+    0% {margin-top: .5rem;}
+    25% {margin-left: .5rem;}
+    50% {margin-left: 0;}
+    75% {margin-left: .2rem;}
+    100% {margin-bottom: .2rem;}
+}
+
+@keyframes upPhrase {
+    0% {
+        opacity: 0;
+        transform: translateY(8rem);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
